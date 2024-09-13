@@ -1,0 +1,170 @@
+/* Tipografia refinada e layout aprimorado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f5ebe9; /* Cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8da39f; /* Cor de fundo ajustada para corresponder ao protótipo */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    position: absolute;
+    left: 30px;
+    top: 11px;
+}
+
+header .logo img {
+    width: 75px; /* Ajuste de tamanho do logo */
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Seção principal */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(100%deg, #f5ebe9 50%); /* Background dividido */
+    position: relative;
+}
+
+.info-box {
+    width: 45%;
+    background-color: #8ca39f; /* Fundo similar ao protótipo */
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-person {
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+.featured-person h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #222;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.featured-person h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.featured-person img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Botão de contato */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5ebe9;
+}
+
+.contact button {
+    background-color: #e1c4b7;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact button:hover {
+    background-color: #c9aa9d;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Rodapé */
+footer {
+    background-color: #8da39f;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content span {
+    margin: 5px 0;
+}
+
+.partners {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.partner-logo {
+    width: 80px;
+    filter: brightness(0) invert(1); /* Logos brancos */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        background: #f5ebe9;
+    }
+
+    .info-box, .featured-person {
+        width: 90%;
+    }
+
+    .featured-person img {
+        margin-top: 0;
+    }
+}
